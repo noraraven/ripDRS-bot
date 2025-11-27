@@ -38,7 +38,7 @@ async function checkReddit() {
         if (!post) return;
 
         const postId = post.id;
-        if (postId === last.lastPost) return;
+        if (postId === lastPost) return;
         lastPost = postId;
 
         const channel = await bot.channels.fetch(CHANNEL_ID);
@@ -83,7 +83,8 @@ async function checkReddit() {
     }
 }
 
-bot.once("ready", () => {
+bot.once("clientReady", () => {
+
     console.log(`ripDRS bot online — watching ONLY r/formuladank 🏎️⚰️`);
 
     checkReddit();
@@ -91,4 +92,5 @@ bot.once("ready", () => {
 });
 
 bot.login(TOKEN);
+
 
