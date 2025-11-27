@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
 
 const bot = new Client({
@@ -92,3 +91,4 @@ bot.once("ready", () => {
 });
 
 bot.login(TOKEN);
+
