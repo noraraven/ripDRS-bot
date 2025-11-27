@@ -1,0 +1,13 @@
+{
+  "name": "ripdrs-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that auto-posts memes from r/formuladank every minute.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "node-fetch": "^3.3.2"
+  }
+}
